@@ -1,16 +1,96 @@
-## Hi there 👋
+<!-- Troque SEU_USUARIO pelo seu usuário do GitHub em todo o arquivo -->
 
-<!--
-**asteras01/asteras01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center">Olá, eu sou o Rafael Gentili 👋</h1>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack;UI%2FUX+Designer;Criador+de+Sites+e+Landing+Pages;Construindo+meus+pr%C3%B3prios+SaaS+%F0%9F%9A%80" alt="Typing SVG" />
+  </a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=SEU_USUARIO&style=flat-square&color=38BDF8&label=Visitas" alt="Visitas ao perfil" />
+</p>
+
+---
+
+## 🧑‍💻 Sobre mim
+
+<img align="right" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Programando" />
+
+- 💻 **Desenvolvedor Full Stack** — do banco de dados à interface
+- 🌐 **Também crio sites e landing pages** para empresas e profissionais, com foco em performance, SEO e animações
+- 🎨 **UI/UX Designer** — identidade visual, design systems e experiência do usuário
+- 🚀 Desenvolvendo meus próprios **produtos SaaS**
+- 🏛️ Interesse especial em software B2B para o mercado brasileiro, como **sistemas de licitações**
+- 🎓 Estudante na **UNIFENAS**
+- 📍 Minas Gerais, Brasil
+
+<br clear="right" />
+
+---
+
+## 🛠️ Tecnologias e ferramentas
+
+### Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,vite&perline=8" alt="Frontend" />
+</p>
+
+### Backend e banco de dados
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,supabase,postgres,prisma&perline=8" alt="Backend" />
+</p>
+
+### Design e ferramentas
+<p>
+  <img src="https://skillicons.dev/icons?i=figma,git,github,vscode,vercel,npm&perline=8" alt="Ferramentas" />
+</p>
+
+### Animações
+<p>
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" alt="GSAP" />
+</p>
+
+---
+
+## 📊 Estatísticas no GitHub
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight&hide_border=true&locale=pt-br" alt="Estatísticas" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=tokyonight&hide_border=true&locale=pt-br" alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=SEU_USUARIO&theme=tokyonight&hide_border=true&locale=pt_BR" alt="Sequência de commits" />
+</p>
+
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SEU_USUARIO&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade" />
+</p>
+
+---
+
+## 🐍 Meus commits
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-grid-snake-dark.svg" />
+    <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+---
+
+## 📫 Vamos conversar?
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/SEU_LINKEDIN" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:SEU_EMAIL"><img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
+  <a href="https://SEU_PORTFOLIO" target="_blank"><img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
+  <a href="https://wa.me/55SEUNUMERO" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=120&section=footer" alt="Rodapé" />
+</p>
