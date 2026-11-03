@@ -1,5 +1,3 @@
-<!-- Troque SEU_USUARIO pelo seu usuário do GitHub em todo o arquivo -->
-
 <h1 align="center">Olá, eu sou o Rafael Gentili 👋</h1>
 
 <p align="center">
@@ -9,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=SEU_USUARIO&style=flat-square&color=38BDF8&label=Visitas" alt="Visitas ao perfil" />
+  <img src="https://komarev.com/ghpvc/?username=asteras01&style=flat-square&color=38BDF8&label=Visitas" alt="Visitas ao perfil" />
 </p>
 
 ---
@@ -57,16 +55,16 @@
 ## 📊 Estatísticas no GitHub
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight&hide_border=true&locale=pt-br" alt="Estatísticas" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=tokyonight&hide_border=true&locale=pt-br" alt="Linguagens mais usadas" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=asteras01&show_icons=true&theme=tokyonight&hide_border=true&locale=pt-br" alt="Estatísticas" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteras01&layout=compact&theme=tokyonight&hide_border=true&locale=pt-br" alt="Linguagens mais usadas" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=SEU_USUARIO&theme=tokyonight&hide_border=true&locale=pt_BR" alt="Sequência de commits" />
+  <img src="https://streak-stats.demolab.com?user=asteras01&theme=tokyonight&hide_border=true&locale=pt_BR" alt="Sequência de commits" />
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SEU_USUARIO&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=asteras01&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade" />
 </p>
 
 ---
@@ -75,8 +73,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-grid-snake-dark.svg" />
-    <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/SEU_USUARIO/SEU_USUARIO/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/asteras01/asteras01/output/github-contribution-grid-snake-dark.svg" />
+    <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/asteras01/asteras01/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 
