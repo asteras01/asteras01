@@ -55,16 +55,21 @@
 ## 📊 Estatísticas no GitHub
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=asteras01&show_icons=true&theme=tokyonight&hide_border=true&locale=pt-br" alt="Estatísticas" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteras01&layout=compact&theme=tokyonight&hide_border=true&locale=pt-br" alt="Linguagens mais usadas" />
+  <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Contribuições" />
+</p>
+
+<p align="center">
+  <img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="Estatísticas" />
+  <img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
+  <img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositórios por linguagem" />
+  <img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Horário mais produtivo" />
 </p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=asteras01&theme=tokyonight&hide_border=true&locale=pt_BR" alt="Sequência de commits" />
-</p>
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=asteras01&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade" />
 </p>
 
 ---
