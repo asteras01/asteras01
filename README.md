@@ -52,36 +52,6 @@
 
 ---
 
-## 📊 Estatísticas no GitHub
-
-<p align="center">
-  <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Contribuições" />
-</p>
-
-<p align="center">
-  <img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="Estatísticas" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Linguagens mais usadas" />
-</p>
-
-<p align="center">
-  <img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositórios por linguagem" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Horário mais produtivo" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=asteras01&theme=tokyonight&hide_border=true&locale=pt_BR" alt="Sequência de commits" />
-</p>
-
----
-
-## ✨ Meus commits
-
-<p align="center">
-  <img width="100%" alt="Commits com brilho" src="https://raw.githubusercontent.com/asteras01/asteras01/output/glow-contrib.svg" />
-</p>
-
----
-
 ## 📫 Vamos conversar?
 
 <p align="center">
