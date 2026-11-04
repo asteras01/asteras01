@@ -1,4 +1,4 @@
-# Salve em .github/workflows/snake.yml (substitua o conteúdo antigo)
+# Salve em .github/workflows/snake.yml (substitua TODO o conteúdo antigo)
 name: Atualizar perfil
 
 on:
@@ -13,18 +13,143 @@ permissions:
   contents: write
 
 jobs:
-  snake:
-    name: Gerar cobrinha
+  glow:
+    name: Gerar brilho dos commits
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Gerar SVGs da cobrinha
-        uses: Platane/snk@v3
+      - uses: actions/setup-node@v4
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          node-version: 20
+
+      - name: Gerar SVG com brilho
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          cat > glow.js <<'JS'
+          const fs = require('fs');
+          
+          const login = process.env.GH_USER;
+          const token = process.env.GITHUB_TOKEN;
+          
+          const query = `query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks { contributionDays { contributionCount contributionLevel weekday } }
+                }
+              }
+            }
+          }`;
+          
+          async function getCalendar() {
+            if (process.env.MOCK) {
+              const levels = ['NONE', 'NONE', 'FIRST_QUARTILE', 'SECOND_QUARTILE', 'THIRD_QUARTILE', 'FOURTH_QUARTILE'];
+              const weeks = Array.from({ length: 53 }, () => ({
+                contributionDays: Array.from({ length: 7 }, (_, d) => ({
+                  contributionCount: 1,
+                  weekday: d,
+                  contributionLevel: levels[Math.floor(Math.random() * levels.length)],
+                })),
+              }));
+              return { totalContributions: 321, weeks };
+            }
+            const res = await fetch('https://api.github.com/graphql', {
+              method: 'POST',
+              headers: {
+                Authorization: 'bearer ' + token,
+                'Content-Type': 'application/json',
+                'User-Agent': 'glow-contrib',
+              },
+              body: JSON.stringify({ query, variables: { login } }),
+            });
+            const json = await res.json();
+            if (json.errors || !json.data) {
+              console.error(JSON.stringify(json));
+              process.exit(1);
+            }
+            return json.data.user.contributionsCollection.contributionCalendar;
+          }
+          
+          (async () => {
+            const cal = await getCalendar();
+          
+            const CELL = 11, GAP = 3, STEP = CELL + GAP;
+            const PAD = 20, TOP = 46;
+            const W = PAD * 2 + cal.weeks.length * STEP - GAP;
+            const H = TOP + 7 * STEP - GAP + PAD;
+            const DUR = 5;          // segundos por passada
+            const BAND = 90;        // largura da faixa de luz
+          
+            const base = {
+              NONE: '#161b22',
+              FIRST_QUARTILE: '#0c4a6e',
+              SECOND_QUARTILE: '#0369a1',
+              THIRD_QUARTILE: '#0ea5e9',
+              FOURTH_QUARTILE: '#38bdf8',
+            };
+            const glow = {
+              FIRST_QUARTILE: '#38bdf8',
+              SECOND_QUARTILE: '#7dd3fc',
+              THIRD_QUARTILE: '#bae6fd',
+              FOURTH_QUARTILE: '#f0f9ff',
+            };
+          
+            let cells = '';
+            let lights = '';
+            cal.weeks.forEach((week, wi) => {
+              week.contributionDays.forEach((day) => {
+                const x = PAD + wi * STEP;
+                const y = TOP + day.weekday * STEP;
+                cells += `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${base[day.contributionLevel]}"/>`;
+                if (day.contributionLevel !== 'NONE') {
+                  // momento em que a faixa de luz passa por esta coluna
+                  const t = ((x + CELL / 2 + BAND / 2) / (W + BAND)) * DUR - 0.25;
+                  lights += `<rect class="l" style="animation-delay:${t.toFixed(2)}s" x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${glow[day.contributionLevel]}"/>`;
+                }
+              });
+            });
+          
+            const total = cal.totalContributions;
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+          <defs>
+            <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <linearGradient id="shine" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#7dd3fc" stop-opacity="0"/>
+              <stop offset="0.5" stop-color="#7dd3fc" stop-opacity="0.22"/>
+              <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="card"><rect width="${W}" height="${H}" rx="12"/></clipPath>
+          </defs>
+          <style>
+            .l { opacity: 0; animation: pulse ${DUR}s ease-out infinite; }
+            @keyframes pulse { 0% { opacity: 0 } 5% { opacity: 1 } 22% { opacity: 0 } 100% { opacity: 0 } }
+            .band { animation: sweep ${DUR}s linear infinite; }
+            @keyframes sweep { from { transform: translateX(${-BAND}px) } to { transform: translateX(${W}px) } }
+            .t { font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #e2e8f0; }
+            .s { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #7dd3fc; }
+          </style>
+          <g clip-path="url(#card)">
+            <rect width="${W}" height="${H}" fill="#0d1117"/>
+            <text class="t" x="${PAD}" y="28">✨ Contribuições no último ano</text>
+            <text class="s" x="${W - PAD}" y="28" text-anchor="end">${total} contribuições</text>
+            ${cells}
+            <g filter="url(#glow)">${lights}</g>
+            <rect class="band" x="0" y="0" width="${BAND}" height="${H}" fill="url(#shine)"/>
+          </g>
+          </svg>`;
+          
+            fs.mkdirSync('dist', { recursive: true });
+            fs.writeFileSync('dist/glow-contrib.svg', svg);
+            console.log('SVG gerado: dist/glow-contrib.svg');
+          })();
+          JS
+          node glow.js
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v4
