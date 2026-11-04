@@ -74,13 +74,10 @@
 
 ---
 
-## 🐍 Meus commits
+## ✨ Meus commits
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/asteras01/asteras01/output/github-contribution-grid-snake-dark.svg" />
-    <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/asteras01/asteras01/output/github-contribution-grid-snake.svg" />
-  </picture>
+  <img width="100%" alt="Commits com brilho" src="https://raw.githubusercontent.com/asteras01/asteras01/output/glow-contrib.svg" />
 </p>
 
 ---
