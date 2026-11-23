@@ -14,15 +14,27 @@
 
 ## 🧑‍💻 Sobre mim
 
-<img align="right" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Programando" />
+<img align="right" width="360" src="assets/foto-ascii.svg" alt="Foto do Rafael Gentili em arte ASCII" />
 
-- 💻 **Desenvolvedor Full Stack** — do banco de dados à interface
-- 🌐 **Também crio sites e landing pages** para empresas e profissionais, com foco em performance, SEO e animações
-- 🎨 **UI/UX Designer** — identidade visual, design systems e experiência do usuário
-- 🚀 Desenvolvendo meus próprios **produtos SaaS**
-- 🏛️ Interesse especial em software B2B para o mercado brasileiro, como **sistemas de licitações**
-- 🎓 Estudante na **UNIFENAS**
-- 📍 Minas Gerais, Brasil
+### 💻 Desenvolvedor Full Stack
+
+Do banco de dados à interface.
+
+### 🌐 Sites e landing pages
+
+Para empresas e profissionais, com foco em performance, SEO e animações.
+
+### 🎨 UI/UX Designer
+
+Identidade visual, design systems e experiência do usuário.
+
+### 🚀 Produtos SaaS próprios
+
+Software B2B para o mercado.
+
+### 🎓 Estudante na UNIFENAS
+
+📍 Minas Gerais, Brasil
 
 <br clear="right" />
 
@@ -57,7 +69,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/SEU_LINKEDIN" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:SEU_EMAIL"><img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
-  <a href="https://SEU_PORTFOLIO" target="_blank"><img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
+  <a href="https://portfoliorafaelgentili.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
   <a href="https://wa.me/55SEUNUMERO" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
 </p>
 
